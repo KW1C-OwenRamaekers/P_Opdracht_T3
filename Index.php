@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="Styles/Index.css">
 </head>
 <body>
-
+    <nav>
+        <ul>
+            <li><a href="Index.php">Home</a></li>
+            <li><a href="Pages/Calc.php">Gewicht Calculator</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
