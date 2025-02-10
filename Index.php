@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="Styles/Index.css">
 </head>
 <body>
-    <nav>
+    <nav id = "menu">
         <ul>
             <li><a href="Index.php">Home</a></li>
             <li><a href="Pages/Calc.php">Gewicht Calculator</a></li>
