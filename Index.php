@@ -11,6 +11,7 @@
 </head>
 <body>
     <nav id = "menu">
+        <img src="Images/Logo.png" alt="TS073">
         <ul>
             <li><a href="Index.php">Home</a></li>
             <li><a href="Pages/Calc.php">Gewicht Calculator</a></li>

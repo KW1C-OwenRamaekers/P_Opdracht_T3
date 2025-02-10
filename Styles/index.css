@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #383333c4;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+#menu img {
+    width: 80px;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+#menu ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
