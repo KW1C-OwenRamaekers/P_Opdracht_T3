@@ -19,5 +19,8 @@
             <li><a href="#">About</a></li>
         </ul>
     </nav>
+    <main>
+        <img src="Images/header.png" alt="Header">
+    </main>
 </body>
 </html>
