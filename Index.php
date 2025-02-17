@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="Styles/Index.css">
 </head>
 <body>
-    <nav id = "menu">
-        <img src="Images/Logo.png" alt="TS073">
-        <ul>
-            <li><a href="Index.php">Home</a></li>
-            <li><a href="Pages/Calc.php">Calorieen Calculator</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+    <?php include("Includes/Navbar.php"); ?>
     <main>
         <img src="Images/header.png" alt="Header">
     </main>
