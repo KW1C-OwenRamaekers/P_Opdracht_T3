@@ -16,7 +16,13 @@
         color: #FFFFFF;
         padding: 20px;
         text-align: center;
-        margin-top: 100%;
+        margin-top: 10vh; /* Changed to 10vh */
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
     .footer-content {
