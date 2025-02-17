@@ -12,7 +12,7 @@
 <body>
     <?php include("Includes/Navbar.php"); ?>
     <main>
-        <img src="Images/header.png" alt="Header">
+        <p>Welkom bij Trainstation073</p>
     </main>
 </body>
 </html>
