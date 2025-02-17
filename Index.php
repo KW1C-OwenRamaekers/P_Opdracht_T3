@@ -14,5 +14,6 @@
     <main>
         <p>Welkom bij Trainstation073</p>
     </main>
+    <?php include("Includes/Footer.php"); ?>
 </body>
 </html>
