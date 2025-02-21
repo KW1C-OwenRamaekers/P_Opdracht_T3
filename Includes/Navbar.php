@@ -48,4 +48,37 @@
     transition: all 0.2s ease-in-out;
     color: #a1a1a1;
 }
+
+/*
+Responsive Version
+*/
+
+@media only screen and (max-width: 600px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #menu img {
+        width: 40px;
+        margin-bottom: 5px;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu ul li {
+        margin: 5px 0;
+    }
+
+    #menu ul li a {
+        font-size: 14px;
+    }
+
+}
 </style>

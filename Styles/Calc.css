@@ -5,9 +5,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("../Images/CalcBG.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1 {
+    color: rgb(30, 30, 30);
     padding-top: 80px;
     text-align: center;
 }
@@ -28,4 +32,22 @@ p {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-attachment: fixed;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        padding-top: 120px;
+    }
 }

@@ -19,3 +19,17 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center;
+        background-size:     cover;
+    }
+
+    p {
+        border: 5px solid #383333c4;
+        background-color: #383333c4;
+        font-size: 20px;
+    }
+}
