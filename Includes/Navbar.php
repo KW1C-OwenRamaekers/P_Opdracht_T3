@@ -1,8 +1,8 @@
 <nav id = "menu">
-        <img src="Images/Logo.png" alt="TS073">
+        <img src="../Images/Logo.png" alt="TS073">
     <ul>
-        <li><a href="Index.php">Home</a></li>
-        <li><a href="Pages/Calc.php">Calorieen Calculator</a></li>
+        <li><a href="../Index.php">Home</a></li>
+        <li><a href="../Pages/Calc.php">Calorieen Calculator</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
     </ul>
