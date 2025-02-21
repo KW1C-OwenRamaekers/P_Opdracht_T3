@@ -30,22 +30,32 @@
         </form>
 
         <?php
-        if (isset($_POST['age']) && isset($_POST['gender']) && isset($_POST['weight']) && isset($_POST['height'])) {
-            $age = $_POST['age'];
-            $gender = $_POST['gender'];
-            $weight = $_POST['weight'];
-            $height = $_POST['height'];
+        /**
+         * Calculate Basal Metabolic Rate (BMR) and daily calorie needs based on user input.
+         * 
+         * This script uses the Harris-Benedict equation to calculate BMR and multiplies it
+         * by an activity factor to estimate daily calorie needs for maintaining current weight.
+         */
 
+        // Check if all required POST variables are set
+        if (isset($_POST['age']) && isset($_POST['gender']) && isset($_POST['weight']) && isset($_POST['height'])) {
+            $age = $_POST['age']; // User's age
+            $gender = $_POST['gender']; // User's gender
+            $weight = $_POST['weight']; // User's weight in kilograms
+            $height = $_POST['height']; // User's height in centimeters
+
+            // Calculate BMR based on gender
             if ($gender == 'male') {
-                $bmr = 66 + (13.7 * $weight) + (5 * $height) - (6.8 * $age);
+                $bmr = 66 + (13.7 * $weight) + (5 * $height) - (6.8 * $age); // BMR formula for men
             } else {
-                $bmr = 655 + (9.6 * $weight) + (1.8 * $height) - (4.7 * $age);
+                $bmr = 655 + (9.6 * $weight) + (1.8 * $height) - (4.7 * $age); // BMR formula for women
             }
 
-            $calories = $bmr * 1.2;
+            $calories = $bmr * 1.2; // Calculate daily calorie needs (sedentary activity level)
 
+            // Output the results
             echo "<p>Uw BMR is: $bmr</p>";
-            echo "<p>Uw calorieën per dag zijn: $calories</p>";
+            echo "<p>Uw calorieën per dag zijn: $calories</p>";
         }
         ?>
     </main>
