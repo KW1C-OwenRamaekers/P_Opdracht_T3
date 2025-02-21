@@ -30,12 +30,6 @@
         </form>
 
         <?php
-        /**
-         * Calculate Basal Metabolic Rate (BMR) and daily calorie needs based on user input.
-         * 
-         * This script uses the Harris-Benedict equation to calculate BMR and multiplies it
-         * by an activity factor to estimate daily calorie needs for maintaining current weight.
-         */
 
         // Check if all required POST variables are set
         if (isset($_POST['age']) && isset($_POST['gender']) && isset($_POST['weight']) && isset($_POST['height'])) {
@@ -46,9 +40,9 @@
 
             // Calculate BMR based on gender
             if ($gender == 'male') {
-                $bmr = 66 + (13.7 * $weight) + (5 * $height) - (6.8 * $age); // BMR formula for men
+                $bmr = 88.362 + (13.397 * $weight) + (4.799 * $height) - (5.677 * $age); // BMR formula for men
             } else {
-                $bmr = 655 + (9.6 * $weight) + (1.8 * $height) - (4.7 * $age); // BMR formula for women
+                $bmr = 447.593 + (9.247 * $weight) + (3.098 * $height) - (4.330 * $age); // BMR formula for women
             }
 
             $calories = $bmr * 1.2; // Calculate daily calorie needs (sedentary activity level)
