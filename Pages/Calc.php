@@ -49,7 +49,7 @@
 
             // Output the results
             echo "<p>Uw BMR is: $bmr</p>";
-            echo "<p>Uw calorieën per dag zijn: $calories</p>";
+            echo "<p>U kunt per dag $calories calorieën innemen om uw huidig gewicht te behouden.</p>";
         }
         ?>
     </main>
